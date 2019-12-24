@@ -1,0 +1,25 @@
+# The value that should be put into the %dist macro in the build environment.
+# Usually "ol8" or blank, but may vary based on the package.  Generally does not need to be altered.
+# Required for the build.
+# Examples:
+#   DIST="el8"
+#   DIST=""
+DIST="el8"
+
+# The Oracle Linux release and update to use as the environment for the build.  Should be in X.Y format where
+# X is the OL release and Y is the update.
+# Examples:
+#   BUILD_UPD="8.0"
+#   BUILD_UPD="8.1"
+BUILD_UPD="8.1"
+
+# A space separated list of platforms to build for.  Choices are "i386", "x86_64", and "aarch64".
+# Examples:
+# BUILD_PLAT="i386 x86_64 aarch64"
+# BUILD_PLAT="i386 x86_64"
+# BUILD_PLAT="i386 aarch64"
+# BUILD_PLAT="x86_64 aarch64"
+# BUILD_PLAT="i386"
+# BUILD_PLAT="x86_64"
+# BUILD_PLAT="aarch64"
+BUILD_PLAT="x86_64 aarch64"
